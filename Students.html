@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School System</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Students.html">Students</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="form-container">
+            <h2>Student Information</h2>
+            <form id="student-form">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" required><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required><br>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" required><br>
+
+                <label for="grade">Grade:</label>
+                <input type="text" id="grade" required><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h2>Students List</h2>
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Date of Birth</th>
+                        <th>Gender</th>
+                        <th>Phone Number</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 School System</p>
+    </footer>
+
+
+    <script src="form.js"></script>
+</body>
+</html>

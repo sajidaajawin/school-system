@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>School System</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Students.html">Students</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Add Students </h2>
+            <form id="student-form">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" required>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" required>
+                <label>Major:</label>
+                <input type="radio" name="major" value="IT" class="radio-field" required> IT
+                <input type="radio" name="major" value="Science" class="radio-field"> Science
+                <input type="radio" name="major" value="Art" class="radio-field"> Art
+                <input type="radio" name="major" value="Administration" class="radio-field"> Administration<br><br>        
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 School System</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
